@@ -12,3 +12,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Starting Node.js ${{ matrix.node-version }}
+        run: |
+          echo "Starting Node.js ${{ matrix.node-version }}"
